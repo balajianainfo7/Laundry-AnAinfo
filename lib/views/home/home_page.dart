@@ -20,10 +20,10 @@ class HomePage extends StatelessWidget {
         index: controller.tabIndex.value,
         children: [
           controller.tabIndex.value == 0 ? FeaturesHome() : Container(),
-          // controller.tabIndex.value == 1
-          //     ? WishListReceived()
-          //     : Container(),
-          // controller.tabIndex.value == 2 ? ProfileScreen() : Container(),
+          controller.tabIndex.value == 1
+              ? FeaturesHome()
+              : Container(),
+          controller.tabIndex.value == 2 ? FeaturesHome() : Container(),
           // controller.tabIndex.value == 4 ? TaskView() : Container()
         ],
       )),

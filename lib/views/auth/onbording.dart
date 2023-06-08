@@ -154,7 +154,7 @@ class _onboardingState extends State<onboarding> {
     print(currentPage);
     if(currentPage == 4)
       {
-           Get.toNamed(RouteNames.homeFeatures);
+           Get.toNamed(RouteNames.homePage);
       }
     else{
       _pageController.animateToPage(currentPage+1, duration: Duration(milliseconds: 200), curve: Curves.linear);
